@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.top {
+    height: 1024px;
+    background-image: url(img/header_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+
+    &__title {
+        width: 788px;
+        padding-top: 218px;
+        color: #FFF;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        width: 481px;
+        padding-top: 32px;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    &__text-link {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &__button {
+        margin-top: 44px;
+        border-radius: 30px;
+        background: #9C0332;
+        width: 234.063px;
+        height: 48.603px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            border-radius: 30px;
+            background: #EB443F;
+
+        }
+    }
+}
+
+.games {
+    height: 556px;
+    background-color: #000915;
+
+    &__nav {
+        padding-top: 128px;
+        display: flex;
+        gap: 31px;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+
+        &__link {
+            width: 379px;
+            height: 300px;
+            border-radius: 16px;
+        }
+
+        &__link-1 {
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_one.jpg), lightgray 50% / cover no-repeat;
+        }
+
+        &__link-2 {
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_two.jpg), lightgray 50% / cover no-repeat;
+        }
+
+        &__link-3 {
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_three.jpg), lightgray 50% / cover no-repeat;
+        }
+
+        &__link a {
+            display: flex;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            margin-top: 236px;
+            padding-left: 32px;
+        }
+
+    }
+}
