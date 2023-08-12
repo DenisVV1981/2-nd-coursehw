@@ -103,4 +103,37 @@ a {
   line-height: 32px;
   margin-top: 236px;
   padding-left: 32px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  center {
+    padding-left: calc(50% - 172.5px);
+    padding-right: calc(50% - 172.5px);
+  }
+  .content {
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content__title {
+    text-align: center;
+    font-size: 32px;
+    width: 343px;
+    padding-top: 238px;
+  }
+  .content__text {
+    font-size: 14px;
+    text-align: center;
+    width: 342px;
+  }
+  .content__text-link {
+    font-size: 14px;
+  }
+  .games {
+    height: 1221px;
+  }
+  .games__nav__link {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */

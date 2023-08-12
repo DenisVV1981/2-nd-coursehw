@@ -1,0 +1,39 @@
+@media (min-width: 375px) and (max-width: 767px) {
+
+    center {
+        padding-left: calc(50% - 345px/2);
+        padding-right: calc(50% - 345px/2);
+    }
+
+    .content {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+            font-size: 32px;
+            width: 343px;
+            padding-top: 238px;
+        }
+
+        &__text {
+            font-size: 14px;
+            text-align: center;
+            width: 342px;
+
+            &-link {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .games {
+        height: 1221px;
+    }
+
+    .games__nav__link {
+        width: 343px;
+    }
+}
