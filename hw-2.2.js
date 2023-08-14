@@ -1,8 +1,8 @@
 //1.Создайте переменную a. Запишите в нее значение 10, выведите его на экран с помощью метода
-let aStart = "10";
+let aStart = 10;
 alert(aStart);
 //Затем запишите в нее значение 20, выведите его на экран
-aStart = "20";
+aStart = 20;
 alert(aStart);
 
 //2.Создайте переменную и присвойте ей значение года выпуска первого iPhone. Выведите значение переменной на экран.
@@ -14,8 +14,8 @@ let javaCreator = "Brendan Eich";
 alert(`Создатель языка программирования JavaScript - ${javaCreator}`);
 
 //4.Создайте две переменные 10 и 2. С помощью метода "alert()" выведите на экран их сумму, разность, произведение и частное (результат деления).
-let first = Number("10");
-let second = Number("2");
+let first = 10;
+let second = 2;
 alert(first + second);
 alert(first - second);
 alert(first * second);
@@ -23,22 +23,22 @@ alert(first / second);
 
 //5.Возведите 2 в 5-ю степень. Результат запишите в переменную result и выведите на экран с помощью метода alert().
 
-let fiveExercise = Number("2");
+let fiveExercise = 2;
 let result = fiveExercise ** 5;
 alert(result);
 
 //6.Даны переменные: a = 9 и b = 2. Найдите остаток от деления a на b и выведите результат на экран с помощью метода alert().
 
-let aFirst = Number("9");
-let bSecond = Number("2");
+let aFirst = 9;
+let bSecond = 2;
 let remainder = (aFirst % bSecond);
 alert(remainder);
 
 //7. Перепишите код с использованием операторов присваивания и инкремента/декремента(количество строк должно остаться прежним).
 
 let num = 1;
-num + 5;
-num - 3;
+num =+ 5;
+num =- 3;
 num *= 7;
 num /= 3;
 num += 1;
@@ -62,15 +62,15 @@ const user = {
 /*9.1 Добавьте объекту user свойство city of residence. Обратите внимание на то, как
 правильно добавлять такие методы: через точку или с помощью квадратных скобок.*/
 
-user.cityOfResidence = 'Moscow';
+user["city of residence"] = 'Moscow';
 
 //9.2 Измените у объекта user свойство age на любое другое новое значение
 
-user['age'] = 30;
+user.age = 30;
 
 //9.3 Удалите у объекта user свойство "city of residence".
 
-delete user.cityOfResidence;
+delete user["city of residence"] ;
 
 /*9.4 Создайте переменную info, присвойте ей значение с помощью метода prompt() 
 "Какую информацию хотите узнать о пользователе?". Далее обращайтесь к свойствам объекта user
