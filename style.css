@@ -61,6 +61,9 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .content__button:hover {
   border-radius: 30px;
@@ -110,6 +113,10 @@ a {
     padding-left: calc(50% - 172.5px);
     padding-right: calc(50% - 172.5px);
   }
+  .top {
+    height: 735px;
+    background-position: -210px;
+  }
   .content {
     height: 735px;
     display: flex;
@@ -126,9 +133,13 @@ a {
     font-size: 14px;
     text-align: center;
     width: 342px;
+    line-height: 22px;
   }
   .content__text-link {
     font-size: 14px;
+  }
+  .content__button {
+    margin-top: 32px;
   }
   .games {
     height: 1221px;
