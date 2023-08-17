@@ -83,17 +83,16 @@ a {
   justify-content: center;
   transition: all;
 }
-.games__nav :hover {
-  border-radius: 16px;
-  border: 3px solid #44D2FF;
-  transform: 0.2s;
-}
 .games__nav__link {
-  width: 377px;
+  width: 379px;
   height: 300px;
   border-radius: 16px;
   transition: all, 0.2s;
   box-sizing: border-box;
+}
+.games__nav__link:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
 }
 .games__nav__link-1 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game_one.png), lightgray 50%/cover no-repeat;
@@ -113,7 +112,6 @@ a {
   line-height: 32px;
   margin-top: 236px;
   padding-left: 32px;
-  pointer-events: none;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {

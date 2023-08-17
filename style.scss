@@ -90,19 +90,19 @@ a {
         align-content: center;
         justify-content: center;
         transition: all;
-        :hover{
-            border-radius: 16px;
-            border: 3px solid #44D2FF;
-            transform: 0.2s ;
-        }
 
         &__link {
-            width: 377px;
+            width: 379px;
             height: 300px;
             border-radius: 16px;
             transition: all, 0.2s;
             box-sizing: border-box;
-          
+
+            &:hover {
+                border-radius: 16px;
+                border: 3px solid #44D2FF;
+
+            }
         }
 
         &__link-1 {
@@ -126,7 +126,6 @@ a {
             line-height: 32px;
             margin-top: 236px;
             padding-left: 32px;
-            pointer-events: none
         }
     }
 }

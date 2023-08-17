@@ -15,7 +15,7 @@ if (password === checkPassword) {
 
 let cFirst = prompt('Введите любое число');
 
-if (cFirst >= 0 && cFirst <= 10) {
+if (cFirst > 0 && cFirst < 10) {
     console.log('Верно');
 } else {
     console.log('Неверно');
@@ -25,7 +25,7 @@ if (cFirst >= 0 && cFirst <= 10) {
 //2. Дубль для себя через тернарный оператор
 
 let cFirst2 = prompt('Введите любое число');
-let message = (cFirst >= 0 && cFirst <= 10) ? 'Верно' : 'Неверно';
+let message = (cFirst2 > 0 && cFirst2 < 10) ? 'Верно' : 'Неверно';
 console.log(message);
 
 
@@ -53,30 +53,32 @@ console.log(aFirst + bSecond);
 
 let monthNumber = Number(prompt('Введите номер месяца'));
 
-switch (monthNumber) {
-    case 1:
-    case 2:
-    case 12:
-        console.log('зима');
-        break;
-    case 3:
-    case 4:
-    case 5:
-        console.log('весна');
-        break;
-    case 6:
-    case 7:
-    case 8:
-        console.log('лето');
-        break;
-    case 9:
-    case 10:
-    case 11:
-        console.log('осень');
-        break;
-    default:
-        console.log('Такого месяца не существует!');
-        break;
+if (!isNaN(monthNumber)) {
+    switch (monthNumber) {
+        case 1:
+        case 2:
+        case 12:
+            console.log('зима');
+            break;
+        case 3:
+        case 4:
+        case 5:
+            console.log('весна');
+            break;
+        case 6:
+        case 7:
+        case 8:
+            console.log('лето');
+            break;
+        case 9:
+        case 10:
+        case 11:
+            console.log('осень');
+            break;
+        default:
+            console.log('Такого месяца не существует!');
+            break;
+    }
 }
 
 /*Дополнительная практика
@@ -85,21 +87,23 @@ switch (monthNumber) {
 
 let quantity = prompt('Пожалуйста, введите любое число');
 
-quantity = Number(quantity);
-if (isNaN(quantity)) {
-    console.log('Введенные данные не являются числом!');
+if (quantity === null || quantity.trim() == '' || isNaN(Number(quantity))) {
+    alert('Введенные данные не являются числом!');
 } else {
+    quantity = Number(quantity);
     let oddMessage = quantity % 2 === 0 ? 'Число чётное' : 'Число нечетное';
     alert(oddMessage);
 }
 
 /*8. Напишите программу, которая определяет, чем пользуется клиент (iOS или Android),
- и выдает соответствующее сообщение для обоих вариантов.*/
-let osTest = navigator.platform;
-console.log(`Установите версию приложения для ${osTest} по ссылке`); // определение версии в реальном времени 
+ и выдает соответствующее сообщение для обоих вариантов.
 
-//8. Решение по инструкции из дз
-//Напишите программу, которая определяет, чем пользуется клиент (iOS или Android)
+let osTest = navigator.platform;
+console.log(`Установите версию приложения для ${osTest} по ссылке`); // определение версии в реальном времени */
+
+/*8. Решение по инструкции из дз
+Напишите программу, которая определяет, чем пользуется клиент (iOS или Android)
+
 let os = navigator.platform;
 let clientOS;
 switch (os) {
@@ -117,8 +121,54 @@ switch (os) {
         clientOS = null;
         console.log('Ничего не ставьте, у вас ненормальная ОС');
         break;
+}*/
+
+//8 (дубль, как в задании на основании ввода данных пользователем)
+
+let userOs = prompt('Введите название вашей операционной системы: iOS или Android');
+let operation = {
+    "IOS": 0,
+    "ANDROID": 1
+}
+
+let clientDeviceOs;
+switch (operation[userOs.toUpperCase()]) {
+    case 0:
+        alert('Установите версию приложения для iOS по ссылке');
+        clientDeviceOs = 0;
+        break;
+
+    case 1:
+        alert('Установите версию приложения для Android по ссылке');
+        clientDeviceOs = 1;
+        break;
+
+    default:
+        alert('Ничего не ставьте, у вас ненормальная ОС');
+        break;
 }
 
 
-
 // 9 вообще не понял как сделать и как получить желаемый год..... :((
+
+let clientDeviceYear = Number(prompt('Введите год выпуска вашего устроайства'));
+
+if (clientDeviceOs === 0) {
+    if (clientDeviceYear >= 2015) {
+        alert('Установите версию приложения для iOS по ссылке');
+
+    } else {
+        alert('Установите облегченную версию приложения для iOS по ссылке');
+
+    }
+} else if (clientDeviceOs === 1) {
+    if (clientDeviceYear >= 2015) {
+        alert('Установите версию приложения для Android по ссылкe');
+    } else {
+        alert('Установите облегченную версию приложения для Android по ссылке');
+    }
+
+} else {
+    alert('У вас что-то непонятное.');
+}
+
