@@ -67,10 +67,13 @@ a {
         font-weight: 400;
         line-height: normal;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         &:hover {
             border-radius: 30px;
             background: #EB443F;
-
         }
     }
 }
@@ -86,29 +89,37 @@ a {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
+        transition: all;
 
         &__link {
             width: 379px;
             height: 300px;
             border-radius: 16px;
+            transition: all, 0.2s;
+            box-sizing: border-box;
+
+            &:hover {
+                border-radius: 16px;
+                border: 3px solid #44D2FF;
+
+            }
         }
 
         &__link-1 {
-            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_one.jpg), lightgray 50% / cover no-repeat;
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_one.png), lightgray 50% / cover no-repeat;
         }
 
         &__link-2 {
-            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_two.jpg), lightgray 50% / cover no-repeat;
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_two.png), lightgray 50% / cover no-repeat;
         }
 
         &__link-3 {
-            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_three.jpg), lightgray 50% / cover no-repeat;
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(img/game_three.png), lightgray 50% / cover no-repeat;
         }
 
-        &__link a {
+        &__link_number {
             display: flex;
             color: #FFF;
-            font-family: Montserrat;
             font-size: 24px;
             font-style: normal;
             font-weight: 600;
@@ -116,6 +127,9 @@ a {
             margin-top: 236px;
             padding-left: 32px;
         }
-
     }
 }
+
+
+
+@import 'mobil'
