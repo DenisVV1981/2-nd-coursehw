@@ -61,6 +61,9 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .content__button:hover {
   border-radius: 30px;
@@ -78,29 +81,76 @@ a {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  transition: all;
 }
 .games__nav__link {
   width: 379px;
   height: 300px;
   border-radius: 16px;
+  transition: all, 0.2s;
+  box-sizing: border-box;
+}
+.games__nav__link:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
 }
 .games__nav__link-1 {
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game_one.jpg), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game_one.png), lightgray 50%/cover no-repeat;
 }
 .games__nav__link-2 {
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game_two.jpg), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game_two.png), lightgray 50%/cover no-repeat;
 }
 .games__nav__link-3 {
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game_three.jpg), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game_three.png), lightgray 50%/cover no-repeat;
 }
-.games__nav__link a {
+.games__nav__link_number {
   display: flex;
   color: #FFF;
-  font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
   margin-top: 236px;
   padding-left: 32px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  center {
+    padding-left: calc(50% - 172.5px);
+    padding-right: calc(50% - 172.5px);
+  }
+  .top {
+    height: 735px;
+    background-position: -210px;
+  }
+  .content {
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content__title {
+    text-align: center;
+    font-size: 32px;
+    width: 343px;
+    padding-top: 238px;
+  }
+  .content__text {
+    font-size: 14px;
+    text-align: center;
+    width: 342px;
+    line-height: 22px;
+  }
+  .content__text-link {
+    font-size: 14px;
+  }
+  .content__button {
+    margin-top: 32px;
+  }
+  .games {
+    height: 1221px;
+  }
+  .games__nav__link {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */
