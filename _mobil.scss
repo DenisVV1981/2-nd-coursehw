@@ -1,15 +1,17 @@
 @media (min-width: 375px) and (max-width: 767px) {
 
-    center {
+    .center {
         padding-left: calc(50% - 345px/2);
         padding-right: calc(50% - 345px/2);
     }
+
     .top {
         height: 735px;
         background-position: -210px;
     }
+
     .content {
-        height: 735px;
+        height: 1221px; // заменил с 735px
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -43,5 +45,41 @@
 
     .games__nav__link {
         width: 343px;
+    }
+
+
+    .game {
+        
+        &__season {
+            flex-direction: column;
+            gap: 64px;
+
+            &__left {
+                text-align: center;
+                align-items: center;
+
+                &_header {
+                    padding-top: 53px;
+                    text-align: center;
+                    font-size: 32px;
+                    line-height: normal;
+                }
+
+                &_text {
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &__right {
+                padding-top: 63px;
+
+                &-picture {
+                    width: 344px;
+                    height: 236px;
+                }
+            }
+        }
     }
 }
