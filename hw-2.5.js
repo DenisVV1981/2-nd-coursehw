@@ -151,7 +151,7 @@ function getCircleArea() {
 }
 function getCirclePerimetr(paras) {
     return this.letPi * 2 * this.radius;
-} 
+}
 const circle1 = {
     radius: 5,
     letPi: 3.14,
@@ -189,30 +189,44 @@ function playCheckSeasons() {
         console.log('Переданный параметр не является числом');
         return;
     }
-
-    switch (Number(monthNumber)) {
-        case 1:
-        case 2:
-        case 12:
-            console.log('зима');
-            break;
-        case 3:
-        case 4:
-        case 5:
-            console.log('весна');
-            break;
-        case 6:
-        case 7:
-        case 8:
-            console.log('лето');
-            break;
-        case 9:
-        case 10:
-        case 11:
-            console.log('осень');
-            break;
-        default:
-            console.log('Такого месяца не существует!');
-            break;
+    let month = Number(monthNumber);
+    if (month === 1 || month === 2 || month === 12) {
+        console.log('Зима'); 
+    } else if (month >= 3 && month <= 5) {
+        console.log('Весна');
+    } else if (month >= 6 && month <= 8) {
+        console.log('Лето');
+    } else if (month >= 9 && month <=11){
+        console.log('Осень'); 
+    } else {
+        console.log('Такого месяца не существует!');
     }
-}  
+
+    // switch (Number(monthNumber)) {
+    //     case 1:
+    //     case 2:
+    //     case 12:
+    //         console.log('зима');
+    //         break;
+    //     case 3:
+    //     case 4:
+    //     case 5:
+    //         console.log('весна');
+    //         break;
+    //     case 6:
+    //     case 7:
+    //     case 8:
+    //         console.log('лето');
+    //         break;
+    //     case 9:
+    //     case 10:
+    //     case 11:
+    //         console.log('осень');
+    //         break;
+    //     default:
+    //         console.log('Такого месяца не существует!');
+    //         break;
+    // }
+}
+
+
