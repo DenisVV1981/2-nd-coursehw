@@ -130,6 +130,69 @@ a {
     }
 }
 
+.game {
+    height: 800px;
+    background: #000915;
+
+    &__season {
+        display: flex;
+        gap: 132px;
+
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+
+            &_header {
+                padding-top: 282px;
+                color: #FFF;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            &_text {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 32px;
+            }
+
+            &_play {
+                border-radius: 30px;
+                background: #9C0332;
+                width: 234.063px;
+                height: 48.603px;
+                flex-shrink: 0;
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    border-radius: 30px;
+                    background: #EB443F;
+                }
+            }
+        }
+
+        &__right {
+            padding-top: 233px;
+        }
+    }
+
+}
+
 
 
 @import 'mobil'
