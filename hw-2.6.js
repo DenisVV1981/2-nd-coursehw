@@ -158,3 +158,44 @@ const filterPositive = (array) => array.filter(el => el < 0);
 
 console.log(filterPositive([-1, 0, 5, -10, 56]));  // => [-1, -10]
 console.log(filterPositive([-25, 25, 0, -1000, -2]));  // => [-25, -1000, -2]
+
+
+/* Задание 14 (дополнительное)
+Создайте массив, состоящий из 10 значений. Значения массива необходимо сгенерировать с помощью метода 
+Math.random() в диапазоне от 0 до 10.В данном массиве найдите все четные значения 
+и добавьте их в новый массив. Результат работы программы необходимо вывести в консоль 
+— это будет два массива: исходный массив и массив с четными значениями.*/
+
+function getRandomArbitrary(min, max) {
+    let arrRandomFirst = [];
+    for (let index = 0; index < 10; index++) {
+        arrRandomFirst.push(Math.round(Math.random() * (max - min) + min));
+    }
+    let arrEven = arrRandomFirst.filter(el => el % 2 === 0);
+
+    let result = {
+        random: arrRandomFirst,
+        evens: arrEven
+    };
+    return result;
+}
+console.log(getRandomArbitrary(0, 10));
+
+
+/* Задание 15 (дополнительное)
+Создайте массив, состоящий из 6 элементов. Элементы массива необходимо сгенерировать с помощью Math.random()
+в диапазоне от 1 до 10. Требуется найти среднее арифметическое этих цифр, результат программы вывести в консоль.
+Для получения среднего арифметического необходимо все значения массива сложить и разделить на количество элементов в массиве.*/
+
+
+function getAvarage(min, max) {
+    let arr = [];
+    for (let index = 0; index < 6; index++) {
+        arr.push(Math.round(Math.random() * (max - min) + min));
+    }
+    console.log(arr);
+    return arr.reduce((accumulator, item) => accumulator + item) / arr.length;
+
+}
+
+console.log(getAvarage(0, 6));
