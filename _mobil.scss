@@ -49,7 +49,7 @@
 
 
     .game {
-        
+
         &__season {
             flex-direction: column;
             gap: 64px;
@@ -78,6 +78,38 @@
                 &-picture {
                     width: 344px;
                     height: 236px;
+                }
+            }
+        }
+
+        &__remember {
+            flex-direction: column-reverse;
+            gap: 64px;
+
+            &__right {
+                text-align: center;
+                align-items: center;
+
+                &_header {
+                    padding-top: 51px;
+                    text-align: center;
+                    font-size: 32px;
+                    line-height: normal;
+                }
+
+                &_text {
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &__left {
+                padding-top: 63px;
+
+                &-picture {
+                    width: 344px;
+                    height: 231px;
                 }
             }
         }

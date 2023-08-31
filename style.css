@@ -166,6 +166,54 @@ a {
 .game__season__right {
   padding-top: 233px;
 }
+.game__remember {
+  display: flex;
+  gap: 132px;
+}
+.game__remember__left {
+  padding-top: 239px;
+}
+.game__remember__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.game__remember__right_header {
+  padding-top: 282px;
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.game__remember__right_text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.game__remember__right_play {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game__remember__right_play:hover {
+  border-radius: 30px;
+  background: #EB443F;
+}
 
 @media (min-width: 375px) and (max-width: 767px) {
   .center {
@@ -231,5 +279,31 @@ a {
   .game__season__right-picture {
     width: 344px;
     height: 236px;
+  }
+  .game__remember {
+    flex-direction: column-reverse;
+    gap: 64px;
+  }
+  .game__remember__right {
+    text-align: center;
+    align-items: center;
+  }
+  .game__remember__right_header {
+    padding-top: 51px;
+    text-align: center;
+    font-size: 32px;
+    line-height: normal;
+  }
+  .game__remember__right_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game__remember__left {
+    padding-top: 63px;
+  }
+  .game__remember__left-picture {
+    width: 344px;
+    height: 231px;
   }
 }/*# sourceMappingURL=style.css.map */
