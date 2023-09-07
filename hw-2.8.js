@@ -14,7 +14,7 @@ people.sort(function (a, b) {
     return a.age - b.age;
 }
 )
-console.log(people.sort());
+console.log(people);
 
 /*Задание 2.Реализуйте функцию filter, которая должна работать аналогично методу массива `filter.
 За основу возьмите функцию map, которую мы реализовывали на уроке.Чтобы из функции map сделать filter,
@@ -75,9 +75,7 @@ timer(30);
 setTimeout*/
 
 function delayForSecond(callback) {
-    setTimeout(() => {
-        callback();
-    }, 1000);
+    setTimeout(callback, 1000);
 }
 
 delayForSecond(function () {        
